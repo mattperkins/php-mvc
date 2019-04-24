@@ -1,4 +1,3 @@
-<!-- ID #<?=$data["id"]?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
