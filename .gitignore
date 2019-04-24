@@ -5,6 +5,7 @@ yarn-debug.log*
 yarn-error.log* 
 env.js 
 .env 
-keys.js 
+keys.js
 config 
-notes.js
+notes.php
+vendor/
