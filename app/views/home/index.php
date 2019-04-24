@@ -9,6 +9,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h2>PHP-MVC</h2>
+  <h2>Pre DB</h2>
 </body>
 </html>
