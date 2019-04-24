@@ -6,6 +6,9 @@
     "autoload": {
         "files": [
             "app/database/dbconnect.php"
+        ],
+        "classmap": [
+            "app/models"
         ]
     }
 }
