@@ -8,4 +8,5 @@ env.js
 keys.js
 config 
 notes.php
+app/database/dbconfig.php
 vendor/
