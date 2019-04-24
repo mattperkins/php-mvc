@@ -16,3 +16,6 @@ $ php app/database/db_insert_tables.php
 ```
 composer dump-autoload
 ```
+```
+yarn add bootstrap jquery popper.js
+```
