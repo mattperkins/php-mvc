@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>MVC</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <h2>Pre DB</h2>
-</body>
-</html>
+<?php 
+ob_start();
+?>
+
+<div>
+  home
+</div>
+
+<?php 
+$content = ob_get_clean();
+include_once("../app/views/partials/master.php"); 
+?>
