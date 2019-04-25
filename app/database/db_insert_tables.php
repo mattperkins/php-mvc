@@ -15,6 +15,6 @@ Capsule::schema()->dropIfExists('subjects');
 Capsule::schema()->create('subjects', function ($table) {
     $table->increments('id');
     $table->string('name');
-    $table->string('department_id');
+    $table->integer('department_id')->unsigned();
     $table->timestamps();
 });
