@@ -1,8 +1,20 @@
-<?php 
+<?php
 
-// composer autoloader
-require_once("../vendor/autoload.php");
+use \Psr\Http\Message\ServerRequestInterface as Request;
+use \Psr\Http\Message\ResponseInterface as Response;
 
-// require_once("database/dbconnect.php");
-require_once("core/App.php");
-require_once("core/Controller.php");
+require '../vendor/autoload.php';
+
+// $app = new \Slim\App; // USE IN PRODUCTION 
+
+// !!! REMOVE IN PRODUCTION
+$app = new \Slim\App([
+  "settings" => [
+    "displayErrorDetails" => true
+  ]
+]);
+// \ !!! REMOVE IN PRODUCTION
+
+require_once('routes/index.php');
+
+$app->run();
