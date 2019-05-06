@@ -4,7 +4,7 @@ $message = "";
 if(isset($_POST["name"]))
 {
   Department::insert([
-    "name" => $_POST["name"]
+    "name" => htmlspecialchars($_POST["name"])
   ]);
   $message = "Data inserted successfully";
 }
