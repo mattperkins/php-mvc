@@ -4,8 +4,8 @@ $message = "";
 if(isset($_POST["name"]))
 {
   Subject::insert([
-    "name" => $_POST["name"],
-    "department_id" => $_POST["department"]
+    "name" => htmlspecialchars($_POST["name"]),
+    "department_id" => htmlspecialchars($_POST["department"])
   ]);
   $message = "Data inserted successfully";
 }
